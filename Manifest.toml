@@ -2,7 +2,7 @@
 
 julia_version = "1.11.2"
 manifest_format = "2.0"
-project_hash = "0746e7f8a9b072e74ad2544bea668e4945c00219"
+project_hash = "d37f921c74607ee7e47c1b042787e03bc8df9050"
 
 [[deps.ADTypes]]
 git-tree-sha1 = "72af59f5b8f09faee36b4ec48e014a79210f2f4f"
@@ -340,6 +340,25 @@ version = "4.1.1"
 git-tree-sha1 = "abe83f3a2f1b857aac70ef8b269080af17764bbe"
 uuid = "9a962f9c-6df0-11e9-0e5d-c546b8b5ee8a"
 version = "1.16.0"
+
+[[deps.DataInterpolations]]
+deps = ["EnumX", "FindFirstFunctions", "ForwardDiff", "LinearAlgebra", "PrettyTables", "RecipesBase", "Reexport"]
+git-tree-sha1 = "e858b471f7f37ccdc2a1da1cf040040ca4d321e7"
+uuid = "82cc6244-b520-54b8-b5a6-8a565e85f1d0"
+version = "7.0.0"
+
+    [deps.DataInterpolations.extensions]
+    DataInterpolationsChainRulesCoreExt = "ChainRulesCore"
+    DataInterpolationsOptimExt = "Optim"
+    DataInterpolationsRegularizationToolsExt = "RegularizationTools"
+    DataInterpolationsSymbolicsExt = "Symbolics"
+
+    [deps.DataInterpolations.weakdeps]
+    ChainRulesCore = "d360d2e6-b24c-11e9-a2a3-2a2ae2dbcce4"
+    Optim = "429524aa-4258-5aef-a3af-852621145aeb"
+    RegularizationTools = "29dad682-9a27-4bc3-9c72-016788665182"
+    Symbolics = "0c5d862f-8b57-4792-8d23-62f2024744c7"
+    Zygote = "e88e6eb3-aa80-5325-afca-941959d7151f"
 
 [[deps.DataStructures]]
 deps = ["Compat", "InteractiveUtils", "OrderedCollections"]
@@ -1310,6 +1329,12 @@ version = "9.59.0"
     InfiniteOpt = "20393b10-9daf-11e9-18c9-8db751c92c57"
     LabelledArrays = "2ee39098-c373-598a-b85f-a56591580800"
 
+[[deps.ModelingToolkitStandardLibrary]]
+deps = ["ChainRulesCore", "DiffEqBase", "IfElse", "LinearAlgebra", "ModelingToolkit", "PreallocationTools", "Symbolics"]
+git-tree-sha1 = "2bfc84061d1aefd5b27cea4a355d5d81b2331879"
+uuid = "16a59e39-deab-5bd0-87e4-056b12336739"
+version = "2.19.0"
+
 [[deps.MonteCarloIntegration]]
 deps = ["Distributions", "QuasiMonteCarlo", "Random"]
 git-tree-sha1 = "722ad522068d31954b4a976b66a26aeccbf509ed"
@@ -1621,6 +1646,12 @@ deps = ["TOML"]
 git-tree-sha1 = "9306f6085165d270f7e3db02af26a400d580f5c6"
 uuid = "21216c6a-2e73-6563-6e65-726566657250"
 version = "1.4.3"
+
+[[deps.PrettyTables]]
+deps = ["Crayons", "LaTeXStrings", "Markdown", "PrecompileTools", "Printf", "Reexport", "StringManipulation", "Tables"]
+git-tree-sha1 = "1101cd475833706e4d0e7b122218257178f48f34"
+uuid = "08abe8d2-0d0c-5749-adfa-8a2ac140af0d"
+version = "2.4.0"
 
 [[deps.Primes]]
 deps = ["IntegerMathUtils"]
@@ -2042,6 +2073,12 @@ deps = ["ArrayInterface", "CloseOpenIntervals", "IfElse", "LayoutPointers", "Lin
 git-tree-sha1 = "f35f6ab602df8413a50c4a25ca14de821e8605fb"
 uuid = "7792a7ef-975c-4747-a70f-980b88e8d1da"
 version = "0.5.7"
+
+[[deps.StringManipulation]]
+deps = ["PrecompileTools"]
+git-tree-sha1 = "a6b1675a536c5ad1a60e5a5153e1fee12eb146e3"
+uuid = "892a3eda-7b42-436c-8928-eab12a02cf0e"
+version = "0.4.0"
 
 [[deps.StyledStrings]]
 uuid = "f489334b-da3d-4c2e-b8f0-e476e12c162b"
