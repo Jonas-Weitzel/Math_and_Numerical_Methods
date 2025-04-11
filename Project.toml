@@ -1,6 +1,7 @@
 [deps]
 DataInterpolations = "82cc6244-b520-54b8-b5a6-8a565e85f1d0"
 DomainSets = "5b8099bc-c8ec-5219-889f-1d9e522a28bf"
+ForwardDiff = "f6369f11-7733-5829-9624-2563aa707210"
 IncompleteLU = "40713840-3770-5561-ab4c-a76e7d0d7895"
 Integrals = "de52edbc-65ea-441a-8357-d3a637375a31"
 MethodOfLines = "94925ecb-adb7-4558-8ed8-f975c56a0bf4"
